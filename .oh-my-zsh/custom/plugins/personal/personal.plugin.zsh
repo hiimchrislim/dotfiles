@@ -14,6 +14,7 @@ function transf(){
 function d(){
 	docker $1 $2
 }
+alias deldsstore='find . -name '.DS_Store' -type f -delete'
 alias dls='docker ps -a'
 alias clone209repo='git clone https://mcsmark.utm.utoronto.ca/git/csc209h_20201/repo/bare/limtungt "209_repo"'
 alias clonemaputm='git clone https://github.com/SantiagoOrdonez/MapUTM.git'

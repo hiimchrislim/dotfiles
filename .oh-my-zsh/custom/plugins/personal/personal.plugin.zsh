@@ -1,7 +1,7 @@
 #------
 #Aliases
 #-------
-function updatestatus(){
+function ipus(){
 	while true
 		do
 		clear

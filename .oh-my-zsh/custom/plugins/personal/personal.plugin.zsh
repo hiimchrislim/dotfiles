@@ -1,7 +1,14 @@
 #------
 #Aliases
 #-------
-
+function updatestatus(){
+	while true
+		do
+		clear
+		ls -lhrt ~/Library/iTunes/iPhone\ Software\ Updates
+		sleep 2
+	done
+}
 function clonerepo(){
 	git clone https://github.com/hiimchrislim/$1
 }
@@ -14,6 +21,7 @@ function transf(){
 function d(){
 	docker $1 $2
 }
+alias updatealias='cp ~/.oh-my-zsh/custom/plugins/personal/personal.plugin.zsh ~/Desktop/dotfiles/.oh-my-zsh/custom/plugins/personal/personal.plugin.zsh'
 alias deldsstore='find . -name '.DS_Store' -type f -delete'
 alias dls='docker ps -a'
 alias clone209repo='git clone https://mcsmark.utm.utoronto.ca/git/csc209h_20201/repo/bare/limtungt "209_repo"'

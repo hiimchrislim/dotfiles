@@ -1,0 +1,48 @@
+{
+    "window.zoomLevel": 1,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "workbench.colorTheme": "Darcula Theme from IntelliJ",
+    "workbench.iconTheme": "material-icon-theme",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.fontFamily": "Meslo LG L DZ for Powerline",
+    "workbench.colorCustomizations": {
+      "terminal.background":"#0e0528",
+      "terminal.foreground":"#00ff92",
+      "terminalCursor.background":"#0e0528",
+      "terminalCursor.foreground":"#00ff9c",
+      "terminal.ansiBlack":"#190054",
+      "terminal.ansiBlue":"#0071cf",
+      "terminal.ansiBrightBlack":"#2d2d2d",
+      "terminal.ansiBrightBlue":"#c1e3fe",
+      "terminal.ansiCyan":"#6BFFDC",
+      "terminal.ansiBrightCyan":"#E5E6FE",
+      "terminal.ansiBrightGreen":"#d6fcb9",
+      "terminal.ansiBrightMagenta":"#ffb1fe",
+      "terminal.ansiBrightRed":"#FB543F",
+      "terminal.ansiBrightWhite":"#FDF4C1",
+      "terminal.ansiBrightYellow":"#feffff",
+      "terminal.ansiGreen":"#00c172",
+      "terminal.ansiMagenta":"#ff8ffd",
+      "terminal.ansiRed":"#ff8272",
+      "terminal.ansiWhite":"#f1f1f1",
+      "terminal.ansiYellow":"#d2a700"
+    },
+    {
+      "terminal.integrated.scrollback": 5000
+    }
+}

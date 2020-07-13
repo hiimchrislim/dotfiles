@@ -1,2 +1,2 @@
 # dotfiles
-My personal dotfiles and themes
+My personal dotfiles, themes and settings

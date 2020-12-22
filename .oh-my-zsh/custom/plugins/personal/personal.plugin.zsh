@@ -1,6 +1,22 @@
 #------
 #Aliases
 #-------
+function backupSys() {
+	cp -r ~/GoLandProjects ~/Desktop/Backups
+	echo "Copied GoLandProjects"
+	cp -r ~/PycharmProjects ~/Desktop/Backups
+	echo "Copied PycharmProjects"
+	cp -r ~/Desktop/Projects ~/Desktop/Backups
+	echo "Copied PycharmProjects"
+	cp -r ~/Documents/Documents/Jobs ~/Desktop/Backups
+	echo "Copied Jobs"
+	cp -r ~/Documents/Documents/University ~/Desktop/Backups
+	echo "Copied University"
+	cp -r ~/Documents/Documents/IDE\ Settings ~/Desktop/Backups
+	echo "Copied IDE Settings"
+	cp -r ~/Documents/Documents/CompSci ~/Desktop/Backups
+	echo "Copied CompSci"
+}
 function ipus(){
 	while true
 		do
@@ -9,18 +25,26 @@ function ipus(){
 		sleep 2
 	done
 }
+function dockerroot(){
+	docker run -it --rm --privileged --pid=host justincormack/nsenter1
+}
 function clonerepo(){
-	git clone https://github.com/hiimchrislim/$1
+	git clone git@github.com:$1/$2.git
+}
+function setgiturl(){
+	git remote set-url origin git@github.com:$1/$2.git
 }
 function sshutm() {
 	ssh limtungt@dh2026pc$1.utm.utoronto.ca
 }
 function transf(){
-	scp $1 limtungt@dh2026pc$2.utm.utoronto.ca:Desktop
+	scp $1 limtungt@dh2010pc$2.utm.utoronto.ca:Desktop
 }
 function d(){
 	docker $1 $2
 }
+alias about="neofetch"
+alias drma="docker rm -f `docker ps -aq`"
 alias updatealias='cp ~/.oh-my-zsh/custom/plugins/personal/personal.plugin.zsh ~/Desktop/dotfiles/.oh-my-zsh/custom/plugins/personal/personal.plugin.zsh'
 alias deldsstore='find . -name '.DS_Store' -type f -delete'
 alias dls='docker ps -a'
@@ -36,7 +60,7 @@ alias lsx='ls -F'
 alias lsh="ls -lah"
 alias gitseturl="git remote set-url origin"
 alias run="python manage.py runserver"
-alias p3="ipython3"
+alias p3="python3"
 alias cls="clear"
 alias end="exit"
 alias r="source ~/.zshrc"
@@ -55,8 +79,14 @@ alias clonegrouprepo="git clone https://limtungt@mcsscm.utm.utoronto.ca:9999/git
 alias cloneclassrepo="git clone ssh://limtungt@cslinux.utm.utoronto.ca/student/cslec/207/19f/207_L0102.git"
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+PATH="/usr/local/Cellar/Python@3.8/3.8.3/bin/:${PATH}"
+#PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
 alias editalias="vim ~/.oh-my-zsh/custom/plugins/personal/personal.plugin.zsh"
 export PATH="~/mongodb-macos-x86_64-enterprise-4.2.1/bin:$PATH"
 export DEFAULT_USER="Chris"
 [[ -s "/Users/chris/.gvm/scripts/gvm" ]] && source "/Users/chris/.gvm/scripts/gvm"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+cowlist=( $(cowsay -l | sed "1 d") );
+thechosencow=${cowlist[$(($RANDOM % ${#cowlist[*]}))]}
+artii "Welcome" | lolcat
+fortune | cowsay -f "$thechosencow" | lolcat

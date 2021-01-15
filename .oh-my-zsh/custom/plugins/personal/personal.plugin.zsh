@@ -1,33 +1,6 @@
 #------
 #Aliases
 #-------
-function backupSys() {
-	cp -r ~/GoLandProjects ~/Desktop/Backups
-	echo "Copied GoLandProjects"
-	cp -r ~/PycharmProjects ~/Desktop/Backups
-	echo "Copied PycharmProjects"
-	cp -r ~/Desktop/Projects ~/Desktop/Backups
-	echo "Copied PycharmProjects"
-	cp -r ~/Documents/Documents/Jobs ~/Desktop/Backups
-	echo "Copied Jobs"
-	cp -r ~/Documents/Documents/University ~/Desktop/Backups
-	echo "Copied University"
-	cp -r ~/Documents/Documents/IDE\ Settings ~/Desktop/Backups
-	echo "Copied IDE Settings"
-	cp -r ~/Documents/Documents/CompSci ~/Desktop/Backups
-	echo "Copied CompSci"
-}
-function ipus(){
-	while true
-		do
-		clear
-		ls -lhrt ~/Library/iTunes/iPhone\ Software\ Updates
-		sleep 2
-	done
-}
-function dockerroot(){
-	docker run -it --rm --privileged --pid=host justincormack/nsenter1
-}
 function clonerepo(){
 	git clone git@github.com:$1/$2.git
 }
@@ -77,8 +50,8 @@ alias kill="fkill"
 alias back="cd .."
 alias runwebserv="python -m SimpleHTTPServer"
 alias gitlist="git ls-tree -r master --name-only"
-alias clonegrouprepo="git clone https://limtungt@mcsscm.utm.utoronto.ca:9999/git/207/19f/repo_a2_RecursiveDefinedYo.git"
-alias cloneclassrepo="git clone ssh://limtungt@cslinux.utm.utoronto.ca/student/cslec/207/19f/207_L0102.git"
+alias clone207grouprepo="git clone https://limtungt@mcsscm.utm.utoronto.ca:9999/git/207/19f/repo_a2_RecursiveDefinedYo.git"
+alias clone207classrepo="git clone ssh://limtungt@cslinux.utm.utoronto.ca/student/cslec/207/19f/207_L0102.git"
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
 PATH="/usr/local/Cellar/Python@3.8/3.8.3/bin/:${PATH}"

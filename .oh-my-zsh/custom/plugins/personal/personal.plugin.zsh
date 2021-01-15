@@ -44,6 +44,8 @@ function d(){
 	docker $1 $2
 }
 alias about="neofetch"
+alias bind="horcrux bind"
+alias split="horcrux split"
 alias drma="docker rm -f `docker ps -aq`"
 alias updatealias='cp ~/.oh-my-zsh/custom/plugins/personal/personal.plugin.zsh ~/Desktop/dotfiles/.oh-my-zsh/custom/plugins/personal/personal.plugin.zsh'
 alias deldsstore='find . -name '.DS_Store' -type f -delete'

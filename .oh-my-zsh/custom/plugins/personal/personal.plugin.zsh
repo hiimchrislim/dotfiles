@@ -1,6 +1,9 @@
 #------
 #Aliases
 #-------
+function dockerroot(){
+	docker run -it --rm --privileged --pid=host justincormack/nsenter1
+}
 function clonerepo(){
 	git clone git@github.com:$1/$2.git
 }

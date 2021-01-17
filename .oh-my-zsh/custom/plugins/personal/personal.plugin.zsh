@@ -26,6 +26,7 @@ alias drma="docker rm -f `docker ps -aq`"
 alias updatealias='cp ~/.oh-my-zsh/custom/plugins/personal/personal.plugin.zsh ~/Desktop/dotfiles/.oh-my-zsh/custom/plugins/personal/personal.plugin.zsh'
 alias deldsstore='find . -name '.DS_Store' -type f -delete'
 alias dls='docker ps -a'
+alias clonecheddarrepo='clonerepo UTMCSC301 final-project-cheddar'
 alias clone209repo='git clone https://mcsmark.utm.utoronto.ca/git/csc209h_20201/repo/bare/limtungt "209_repo"'
 alias clonemaputm='git clone https://github.com/SantiagoOrdonez/MapUTM.git'
 alias compiled='gcc -Wall -d -o $1'

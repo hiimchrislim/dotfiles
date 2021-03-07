@@ -11,7 +11,7 @@ function setgiturl(){
 	git remote set-url origin git@github.com:$1/$2.git
 }
 function sshutm() {
-	ssh limtungt@dh2026pc$1.utm.utoronto.ca
+	ssh limtungt@cs.utm.utoronto.ca
 }
 function transf(){
 	scp $1 limtungt@dh2010pc$2.utm.utoronto.ca:Desktop
@@ -19,6 +19,9 @@ function transf(){
 function d(){
 	docker $1 $2
 }
+#Cow Say /usr/local/Cellar/cowsay/3.04/share/cows
+alias mongostart="brew services run mongodb-community"
+alias sshcssc="ssh cssc@cssc.utm.utoronto.ca"
 alias about="neofetch"
 alias bind="horcrux bind"
 alias split="horcrux split"

@@ -20,7 +20,9 @@ function d(){
 	docker $1 $2
 }
 #Cow Say /usr/local/Cellar/cowsay/3.04/share/cows
+alias rickroll="curl -s -L http://www.cs.toronto.edu/~angelazb/render.sh  | bash "
 alias mongostart="brew services run mongodb-community"
+alias mongostop="brew services stop mongodb-community"
 alias sshcssc="ssh cssc@cssc.utm.utoronto.ca"
 alias about="neofetch"
 alias bind="horcrux bind"
@@ -72,3 +74,6 @@ cowlist=( $(cowsay -l | sed "1 d") );
 thechosencow=${cowlist[$(($RANDOM % ${#cowlist[*]}))]}
 artii "Welcome" | lolcat
 fortune | cowsay -f "$thechosencow" | lolcat
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion

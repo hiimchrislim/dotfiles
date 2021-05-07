@@ -19,6 +19,10 @@ function transf(){
 function d(){
 	docker $1 $2
 }
+function setupstream() {
+	git push --set-upstream origin $1
+}
+
 #Cow Say /usr/local/Cellar/cowsay/3.04/share/cows
 alias rickroll="curl -s -L http://www.cs.toronto.edu/~angelazb/render.sh  | bash "
 alias localipaddr="ipconfig getifaddr en0"

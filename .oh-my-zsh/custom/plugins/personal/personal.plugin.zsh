@@ -1,9 +1,6 @@
 #------
 #Aliases
 #-------
-function dockerroot(){
-	docker run -it --rm --privileged --pid=host justincormack/nsenter1
-}
 function clonerepo(){
 	git clone git@github.com:$1/$2.git
 }
@@ -16,9 +13,7 @@ function sshutm() {
 function transf(){
 	scp $1 limtungt@dh2010pc$2.utm.utoronto.ca:Desktop
 }
-function d(){
-	docker $1 $2
-}
+
 function setupstream() {
 	git push --set-upstream origin $1
 }
@@ -36,9 +31,7 @@ alias drma="docker rm -f `docker ps -aq`"
 alias updatealias='cp ~/.oh-my-zsh/custom/plugins/personal/personal.plugin.zsh ~/Desktop/dotfiles/.oh-my-zsh/custom/plugins/personal/personal.plugin.zsh'
 alias deldsstore='find . -name '.DS_Store' -type f -delete'
 alias dls='docker ps -a'
-alias clonecheddarrepo='clonerepo UTMCSC301 final-project-cheddar'
 alias clone209repo='git clone https://mcsmark.utm.utoronto.ca/git/csc209h_20201/repo/bare/limtungt "209_repo"'
-alias clonemaputm='git clone https://github.com/SantiagoOrdonez/MapUTM.git'
 alias compiled='gcc -Wall -d -o $1'
 alias compilec='gcc -Wall -c'
 alias new='touch'

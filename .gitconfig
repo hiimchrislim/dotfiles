@@ -1,3 +1,7 @@
 [user]
-	name = Chris Lim
-	email = [hello@hiimchrislim.co]
+	name = Chris
+	email = hello@hiimchrislim.co
+[http]
+	sslVerify = false
+[pull]
+	ff = only

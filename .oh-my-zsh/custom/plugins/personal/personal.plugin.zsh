@@ -4,6 +4,7 @@
 function clonerepo(){
 	git clone git@github.com:$1/$2.git
 }
+
 function setgiturl(){
 	git remote set-url origin git@github.com:$1/$2.git
 }
@@ -17,8 +18,12 @@ function transf(){
 function setupstream() {
 	git push --set-upstream origin $1
 }
+function merge() {
+	git fetch && git merge origin/$1
+}
 
 #Cow Say /usr/local/Cellar/cowsay/3.04/share/cows
+alias rebase="git pull --rebase"
 alias rickroll="curl -s -L http://www.cs.toronto.edu/~angelazb/render.sh  | bash "
 alias localipaddr="ipconfig getifaddr en0"
 alias mongostart="brew services run mongodb-community"

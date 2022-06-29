@@ -25,7 +25,7 @@ function merge() {
 #Cow Say /usr/local/Cellar/cowsay/3.04/share/cows
 alias ghci="stack ghci"
 alias rebase="git pull --rebase"
-alias rickroll="curl -s -L http://www.cs.toronto.edu/~angelazb/render.sh  | bash "
+alias rickroll="curl -s -L https://www.cs.toronto.edu/~angelazb/render.sh  | bash "
 alias localipaddr="ipconfig getifaddr en0"
 alias mongostart="brew services run mongodb-community"
 alias mongostop="brew services stop mongodb-community"
